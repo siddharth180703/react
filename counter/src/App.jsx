@@ -7,12 +7,12 @@ function App() {
   //let count = 0;
   let [count, setCounter] = useState(0);
   const addValue = () => {
-    console.log("added");
+    //console.log("added");
     count = count + 1;
     setCounter(count);
   };
   const subValue = () => {
-    console.log("subtracted");
+    //console.log("subtracted");
     count = count - 1;
     setCounter(count);
   };
