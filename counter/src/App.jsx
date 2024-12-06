@@ -8,12 +8,12 @@ function App() {
   let [count, setCounter] = useState(0);
   const addValue = () => {
     //console.log("added");
-    count = count + 1;
+    if (count != 20) count = count + 1;
     setCounter(count);
   };
   const subValue = () => {
     //console.log("subtracted");
-    count = count - 1;
+    if (count != 0) count = count - 1;
     setCounter(count);
   };
   return (
