@@ -48,7 +48,11 @@ function Login() {
             Sign Up
           </Link>
         </p>
-        {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
+        {error && (
+          <p className="text-red-600 mt-8 text-center">
+            Invalid Username or Password
+          </p>
+        )}
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <Input
